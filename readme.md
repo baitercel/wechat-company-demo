@@ -12,7 +12,7 @@
 
 ![小程序公司demo演示](https://github.com/baitercel/wechat-company-demo/blob/master/show.gif)
 
-[视频演示](https://github.com/baitercel/wechat-company-demo/blob/master/show.mp4)
+
 
 
 
