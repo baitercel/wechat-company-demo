@@ -10,9 +10,9 @@
 
 ## 预览
 
-![小程序公司demo演示](https://github.com/zce/weapp-demo/raw/tutorial/preview.gif)
+![小程序公司demo演示](https://github.com/baitercel/wechat-company-demo/blob/master/show.gif)
 
-[视频演示](http://files.wedn.net/videos/weapp/preview.mp4)
+[视频演示](https://github.com/baitercel/wechat-company-demo/blob/master/show.mp4)
 
 
 
