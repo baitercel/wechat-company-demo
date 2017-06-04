@@ -1,0 +1,73 @@
+<view class="container flex-wrap flex-direction-col">
+<view class="top-tab flex-wrp flex-tab " >
+  <view class="toptab flex-item {{currentNavtab==itemName.id ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{itemName.id}}" bindtap="switchTab">
+    {{itemName.name}}
+  </view>
+</view>
+
+
+
+
+
+  <view wx:for="{{Info}}" wx:for-item="itemName" class="ctnt1 placehold" hidden="{{currentNavtab==itemName.key[0].p_id ? '' : true}}">
+    
+
+<block wx:if="{{itemName.key[0].p_id == 123}}">
+      <navigator data-mark="{{itemNameM.id}}"  wx:for="{{itemName.key}}" wx:for-item="itemNameM"  url="/pages/news/news-details?id={{itemNameM.id}}" >
+            
+                    <view class="news-item line">
+                        <view class="news-item-pic">
+                            <image  src="{{itemNameM.pic}}" class="news-item-image" ></image>
+                        </view>
+                        <view class="news-item-words">
+                            <view class="news-item-title"><text>{{itemNameM.name}}</text></view>
+                            <view class="news-item-content"><text>{{itemNameM.short_name}}</text></view>
+                        </view>
+                    </view>
+                </navigator>
+    
+</block>
+
+
+        <block wx:if="{{itemName.key[0].p_id == 99}}">
+
+        <import src="../../utils/wxParse/wxParse.wxml"/> 
+<view class="page">
+ 
+    <view class="news-details-content wxParse">
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+</view>
+            
+
+        
+        </block>
+
+
+
+
+        <!--<view class="container chat">
+          <view data-mark="{{itemNameM.id}}" class="chat-item flex-wrp" wx:for="{{itemName.key}}" wx:for-item="itemNameM"  bindtap="tiao">
+            <view class="avatar flex-item">
+              
+            </view>
+            <view class="chat-content flex-item">
+              <view class="chat-source">
+                <text class="chatmate">{{itemNameM.name}}</text>
+                <text class="lasttime">{{itemNameM.name}}</text>
+              </view>
+              
+            </view>
+          </view>
+        </view>-->
+
+
+    
+  </view>
+  
+
+</view>
+
+
+
+

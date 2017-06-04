@@ -1,0 +1,16 @@
+        
+   <view class="ctnt1 placehold">     
+        
+           <navigator data-mark="{{itemNameM.id}}"  wx:for="{{activity}}" wx:for-item="itemNameM"  url="/pages/news/news-details?id={{itemNameM.id}}" >
+     
+            <view class="news-item line">
+                <view class="news-item-pic">
+                    <image  src="{{itemNameM.pic}}" class="news-item-image" ></image>
+                </view>
+                <view class="news-item-words">
+                    <view class="news-item-title"><text>{{itemNameM.name}}</text></view>
+                    <view class="news-item-content"><text>{{itemNameM.short_name}}</text></view>
+                </view>
+            </view>
+        </navigator>
+        </view>

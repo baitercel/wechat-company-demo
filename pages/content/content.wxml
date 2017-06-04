@@ -1,0 +1,46 @@
+<view class="container flex-wrap flex-direction-col">
+<view class="top-tab flex-wrp flex-tab " >
+  <view class="toptab flex-item {{currentNavtab==itemName.id ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{itemName.id}}" bindtap="switchTab">
+    {{itemName.name}}
+  </view>
+</view>
+
+
+
+
+
+  <view wx:for="{{Info}}" wx:for-item="itemName" class="ctnt1 placehold" hidden="{{currentNavtab==itemName.key[0].p_id ? '' : true}}">
+    
+    <view class="solution" data-mark="{{itemNameM.id}}"  wx:for="{{itemName.key}}" wx:for-item="itemNameM"  bindtap="tiao">
+      <image class="solution-img" src="{{itemNameM.pic}}"></image>
+      <view class="title">{{itemNameM.name}}</view>
+    </view>
+   
+
+        
+
+        <!--<view class="container chat">
+          <view data-mark="{{itemNameM.id}}" class="chat-item flex-wrp" wx:for="{{itemName.key}}" wx:for-item="itemNameM"  bindtap="tiao">
+            <view class="avatar flex-item">
+              
+            </view>
+            <view class="chat-content flex-item">
+              <view class="chat-source">
+                <text class="chatmate">{{itemNameM.name}}</text>
+                <text class="lasttime">{{itemNameM.name}}</text>
+              </view>
+              
+            </view>
+          </view>
+        </view>-->
+
+
+    
+  </view>
+  
+
+</view>
+
+
+
+

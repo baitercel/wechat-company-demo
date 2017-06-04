@@ -1,0 +1,79 @@
+<view class="container flex-wrap flex-direction-col">
+<view class="top-tab flex-wrp flex-tab " >
+  <view class="toptab flex-item {{currentNavtab==itemName.id ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{itemName.id}}" bindtap="switchTab">
+    {{itemName.name}}
+  </view>
+</view>
+
+
+
+
+
+  <view wx:for="{{Info}}" wx:for-item="itemName" class="ctnt1 placehold" hidden="{{currentNavtab==itemName.key[0].p_id ? '' : true}}">
+    
+<!--
+        <navigator url="/pages/news/news-details?id=358">
+            <view class="news-item line">
+                <view class="news-item-pic">
+                    <image mode="widthFix" src="http://www.jsssha.com/wp-content/uploads/2016/12/2-1-300x250.jpg" class="news-item-image" width="" height=""></image>
+                </view>
+                <view class="news-item-words">
+                    <view class="news-item-title"><text>CCIA第七届中国物联网产业与新型智慧城市年会圆满落幕，江苏盛世华安智能科技股份有限公司喜获五大奖项。</text></view>
+                    <view class="news-item-content"><text>2016年12月16日，由工业和信息化部指导，中国通信工业协会主办，中国通信工业协会物联网应用分会承办的“第七届中国物联网产业与新</text></view>
+                </view>
+            </view>
+        </navigator>
+
+
+        <navigator url="/pages/news/news-details?id=358">
+            <view class="news-item line">
+                <view class="news-item-pic">
+                    <image mode="widthFix" src="http://www.jsssha.com/wp-content/uploads/2016/12/2-1-300x250.jpg" class="news-item-image" width="" height=""></image>
+                </view>
+                <view class="news-item-words">
+                    <view class="news-item-title"><text>CCIA第七届中国物联网产业与新型智慧城市年会圆满落幕，江苏盛世华安智能科技股份有限公司喜获五大奖项。</text></view>
+                    <view class="news-item-content"><text>2016年12月16日，由工业和信息化部指导，中国通信工业协会主办，中国通信工业协会物联网应用分会承办的“第七届中国物联网产业与新</text></view>
+                </view>
+            </view>
+        </navigator>-->
+
+       
+ 
+
+           <navigator data-mark="{{itemNameM.id}}"  wx:for="{{itemName.key}}" wx:for-item="itemNameM"  bindtap="tiao" >
+            <view class="news-item line">
+                <view class="news-item-pic">
+                    <image  src="{{itemNameM.pic}}" class="news-item-image" width="" height=""></image>
+                </view>
+                <view class="news-item-words">
+                    <view class="news-item-title"><text>{{itemNameM.name}}</text></view>
+                    <view class="news-item-content"><text>{{itemNameM.short_name}}</text></view>
+                </view>
+            </view>
+        </navigator>
+
+        <!--<view class="container chat">
+          <view data-mark="{{itemNameM.id}}" class="chat-item flex-wrp" wx:for="{{itemName.key}}" wx:for-item="itemNameM"  bindtap="tiao">
+            <view class="avatar flex-item">
+              
+            </view>
+            <view class="chat-content flex-item">
+              <view class="chat-source">
+                <text class="chatmate">{{itemNameM.name}}</text>
+                <text class="lasttime">{{itemNameM.name}}</text>
+              </view>
+              
+            </view>
+          </view>
+        </view>-->
+
+
+    
+  </view>
+  
+
+</view>
+
+
+
+

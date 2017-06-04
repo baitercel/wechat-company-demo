@@ -1,0 +1,219 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: colum459ae9459ae9n;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 200rpx 0;*/
+  box-sizing: border-box;
+  background: #FBF9FE;
+}
+
+.container.withtab{
+  margin: 105rpx 0 0 0;
+  /*top: 105rpx;*/
+}
+.flex-wrp{
+  display: flex;
+}
+.flex-tab{
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+.top-tab{
+  width: 750rpx;
+  height: 60rpx;
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  margin: 0 0 8rpx 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.toptab.active{
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
+.container{
+  padding: 0;
+  font-size: 14rpx;
+  color: #000;
+}
+.container .feed-item{
+  width: 690rpx;
+  padding: 30rpx 30rpx 20rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eeeeee;
+}
+.container .feed-item .feed-source{
+  width: 690rpx;
+  left: 0;
+  height: 50rpx;
+}
+.container .feed-item .feed-source .avatar{
+  position: relative;
+  display: inline-block;
+}
+.container .feed-item .feed-source a{
+  display: inline-block;
+  height: 40rpx;
+}
+.container .feed-item .feed-source .avatar image{
+  /*position: absolute;*/
+  display: inline-block;
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 45rpx;
+  top: 10rpx;
+  vertical-align: middle;
+}
+.container .feed-item .feed-source text{
+  /*position: absolute;*/
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
+  margin: 0 0 0 15rpx;
+  color: #a0acac;
+  font-size: 26rpx;
+}
+.container .feed-item .feed-source .item-more{
+  display: inline-block;
+  width: 40rpx;
+  height: 45rpx;
+  float: right;
+}
+.container .feed-item .feed-content{
+  padding: 10rpx 0 0 0;
+}
+.container .feed-item .feed-content .question text{
+  font-size: 28rpx;
+  font-weight: 600px;
+  line-height: 40rpx;
+  text-space: 5rpx;
+}
+.container .feed-item .feed-content .answer-body{
+  padding: 10rpx 0 0 0;
+  /*height: 10rpx;*/
+  font-size: 24rpx;
+  line-height: 28rpx;
+  color: #5b5b5b;
+}
+.container .feed-item .feed-content .answer-actions{
+  width: 690rpx;
+  padding: 10rpx 0  0;
+  color: #a0acac;
+}
+.container .feed-item .feed-content .answer-actions view{
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 0 10rpx 0 0;
+  font-size: 24rpx;
+}
+.container .feed-item .feed-content .answer-actions .dot ::after{
+  content: "•";
+}
+
+.top-tab{
+  width: 750rpx;
+  height: 60rpx;
+  background: #fff;
+  color: #ddd;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  box-shadow: 0 1px 1px #bebebe;
+  margin: 0 0 8rpx 0;
+  z-index: 9999;
+}
+
+.toptab.active{
+  color: #459ae9;
+  border-bottom: solid 1px #459ae9;
+}
+.activity{
+  width: 750rpx;
+  height: 375rpx;
+}
+.activity image{
+  width: 750rpx;
+  height: 375rpx;
+}
+.placehold{
+  font-size: 28rpx;
+  padding: 60rpx 0 0 0;
+  width:355px;
+}
+
+
+
+
+
+.chat-item{
+  width: 725rpx;
+  background: #ffffff;
+  padding: 25rpx 25rpx 25rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.chat-item  image{
+  width: 120rpx;
+  height: 100rpx;
+}
+.chat-item .avatar{
+  flex: 1;
+}
+.chat-item .chat-content{
+  flex: 4;
+  text-align: left;
+}
+.chat-item .chat-content text{
+  /*display: block;*/
+}
+.chat-item .chat-content .chat-source{
+  color: #818A8F;
+  font-size: 28rpx;
+  padding: 40rpx 0 8rpx 30rpx;
+}
+.chat-item .chat-content .chat-source .chatmate{
+  font-size: 34rpx;
+  color: #000000;
+  text-align: left;
+}
+.chat-item .chat-content .chat-source .lasttime{
+  flex: 1;
+  font-size: 22rpx;
+  float: right;
+  vertical-align: text-bottom;
+}
+.chat-item .chat-content .chat-txt{
+  display: block;
+  color: #7b7b7b;
+  font-size: 26rpx;
+  line-height: 34rpx;
+}
+
+.solution {
+  margin: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+.solution .title {
+  font-weight: bold;
+}
+
+.solution-img {
+  width: 100%;
+  height: 150px;
+}

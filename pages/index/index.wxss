@@ -1,0 +1,128 @@
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+.head{
+    padding: 80rpx;
+    line-height: 1;
+}
+.body{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    overflow: hidden;
+}
+.title{
+    font-size: 52rpx;
+}
+.desc{
+    margin-top: 10rpx;
+    color: #888888;
+    font-size: 28rpx;
+}
+
+.widgets__item{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 4rpx;
+    cursor: pointer;
+}
+.widgets__info{
+    display: flex;
+    padding: 40rpx;
+    align-items: center;
+    flex-direction: row;
+}
+
+.widgets__info_show .widgets__info-img{
+    transform: rotate(-90deg);
+}
+.widgets__info-name{
+    flex: 1;
+}
+.widgets__info-img{
+    width: 32rpx;
+    height: 32rpx;
+    transition: transform .4s;
+    transform: rotate(90deg);
+}
+
+.widgets__list{
+    display: none;
+}
+.widgets__list_show{
+    display: block;
+}
+.widget{
+    position: relative;
+    padding-top: 26rpx;
+    padding-bottom: 26rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.widget_more{
+    position: relative;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    padding-left: 0rpx;
+    padding-right: 40rpx;
+    text-align: right;
+}
+.widget__arrow{
+    position: absolute;
+    top: 28rpx;
+    right: 0rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+.widget__line{
+    content: " ";
+    position: absolute;
+    left: 40rpx;
+    top: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: #F0F0F0;
+}
+.widget__line_first{
+    left: 0;
+    right: 0;
+    background-color: #D8D8D8;
+}
+.jjfa{
+    width: 190rpx;
+    height: 190rpx;
+}
+.news-title-h{
+    padding: 0rpx 20rpx ;
+    color: #AAAAAA;
+    float:left;
+    margin: 30rpx 0 10rpx 0;
+}
+
+.jjfak{
+ width:33%;
+ float:left;
+ text-align:center;
+}
+
+.line-text {
+  font-size: 14px;
+  line-height: 14px;
+  border-left: 2px solid #000;
+  padding:0 0 0 5px;
+  margin: 10px 10px;  
+  color:#666;
+  font-family: "华文细黑",-apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+
+.bot{
+    position:absolute;
+    top:320rpx;
+    color:#fff;
+    font-weight:900;
+}

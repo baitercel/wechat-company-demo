@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/content/content",
+    "pages/news/news-details",
+    "pages/product/product",
+    "pages/news/news",
+    "pages/success/success",
+    "pages/activity/activity",
+    "pages/company/company",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序公司模板",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#459ae9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index_selected.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/content/content",
+      "iconPath": "images/des.png",
+      "selectedIconPath": "images/des_selected.png",
+      "text": "解决方案"
+    },
+    
+     {
+      "pagePath": "pages/success/success",
+      "iconPath": "images/right.png",
+      "selectedIconPath": "images/right_selected.png",
+      "text": "成功案例"
+    },
+    {
+      "pagePath": "pages/activity/activity",
+      "iconPath": "images/act.png",
+      "selectedIconPath": "images/act_selected.png",
+      "text": "活动"
+    },
+    {
+      "pagePath": "pages/company/company",
+      "iconPath": "images/gs.png",
+      "selectedIconPath": "images/gs_selected.png",
+      "text": "公司"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

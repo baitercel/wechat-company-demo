@@ -1,0 +1,157 @@
+<!--index.wxml-->
+<view class="index">
+    <view class="slider">
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+                <!--<swiper-item>
+                    <navigator  url="/pages/news/news-details?id=447" class="widget">
+                       <text class="bot">我是小程序1</text>
+                       <image mode="widthFix" src="/images/1.png" class="slide-image" width="" height=""></image>
+                        
+                    </navigator>
+                </swiper-item>
+
+
+                <swiper-item>
+                    <navigator url="/pages/news/news-details?id=447" class="widget">
+                    <text class="bot">我是小程序2</text>
+                        <image mode="widthFix" src="/images/2.png" class="slide-image" width="" height=""></image>
+                    </navigator>
+                </swiper-item>
+
+                <swiper-item>
+                    <navigator url="/pages/news/news-details?id=447" class="widget">
+                     <text class="bot">我是小程序3</text>
+                        <image mode="widthFix" src="/images/3.png" class="slide-image" width="" height=""></image>
+                    </navigator>
+                </swiper-item>
+                <swiper-item>
+                    <navigator url="/pages/news/news-details?id=447" class="widget">
+                    <text class="bot">我是小程序4</text>
+                        <image mode="widthFix" src="/images/4.png" class="slide-image" width="" height=""></image>
+                    </navigator>
+                </swiper-item>-->
+
+
+
+
+
+
+            <block wx:for="{{swipers}}">
+                <swiper-item>
+                    <navigator url="/pages/news/news-details?id={{item.id}}" class="widget">
+                    <view class="bot" style="flex-grow:1;text-align:center;width:100%">{{item.name}}</view>
+                        <image mode="widthFix" src="{{item.pic}}" class="slide-image" width="" height=""></image>
+                    </navigator>
+                </swiper-item>
+            </block>
+
+
+
+
+
+
+
+
+
+        </swiper>
+    </view>
+
+
+
+
+
+
+<div class="news-title-h">
+<view class="line-text">解决方案</view>
+</div>
+
+<view class="news">
+
+        <block>
+        <view wx:for="{{other}}" class="jjfak" data-idx="{{item.id}}" bindtap="tabContent" >
+        <image class="jjfa" src="{{item.pic}}"></image>
+               {{item.name}}
+        </view>
+        </block>
+
+
+    </view>
+
+
+<div class="news-title-h">
+<view class="line-text">成功案例</view>
+</div>
+    <view class="news">
+        
+
+        <block wx:for="{{success}}">
+        <navigator url="/pages/news/news-details?id={{item.id}}">
+            <view class="news-item line">
+                <view class="news-item-pic">
+                    <image  src="{{item.pic}}" class="news-item-image"></image>
+                </view>
+                <view class="news-item-words">
+                    <view class="news-item-title"><text>{{item.name}}</text></view>
+                    <view class="news-item-content"><text>{{item.short_name}}</text></view>
+                </view>
+            </view>
+        </navigator>
+
+
+
+        </block>
+
+
+
+
+         <view class="widgets__list widgets__list_show">
+            <view  class="widget_more">
+                <text bindtap="tapName" class="news-more">查看更多 >></text>
+                <!--<image class="widget__arrow" src="/images/arrowright.png" mode="aspectFill" />
+                <view class="widget__line widget__line_first"></view>
+                -->
+            </view>
+        </view>
+    </view>
+
+
+<div class="news-title-h">
+<view class="line-text">近期活动</view>
+</div>
+    <view class="news">
+        
+
+            <block wx:for="{{activity}}">
+        <navigator url="/pages/news/news-details?id={{item.id}}">
+            <view class="news-item line">
+                <view class="news-item-pic">
+                    <image  src="{{item.pic}}" class="news-item-image"></image>
+                </view>
+                <view class="news-item-words">
+                    <view class="news-item-title"><text>{{item.name}}</text></view>
+                    <view class="news-item-content"><text>{{item.short_name}}</text></view>
+                </view>
+            </view>
+        </navigator>
+
+
+
+        </block>
+
+
+
+        <view class="widgets__list widgets__list_show">
+            <view class="widget_more" bindtap="tapAct">
+                <text class="news-more">查看更多 >></text>
+                <!--<image class="widget__arrow" src="/images/arrowright.png" mode="aspectFill" />
+                <view class="widget__line widget__line_first"></view>
+                -->
+            </view>
+        </view>
+    </view>
+
+
+    
+</view>
